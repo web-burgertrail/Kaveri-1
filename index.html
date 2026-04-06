@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description" content="Kaveri Children's Hospital - Expert Paediatric Care in Nirmal, Telangana." />
+  <title>Kaveri Children's Hospital – Nirmal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Sora:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <div class="logo-ring"><img src="33177.png" alt="Logo" class="logo-img" /></div>
+        <div class="logo-txt">
+          <span class="ln">Kaveri Children's Hospital</span>
+          <span class="ls">Nirmal, Telangana</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#doctors">Doctors</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#book" class="nav-cta">Book Appointment</a>
+      <button class="burger" id="burger"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mob-menu" id="mobMenu">
+      <ul>
+        <li><a href="#home" onclick="closeMob()">Home</a></li>
+        <li><a href="#about" onclick="closeMob()">About</a></li>
+        <li><a href="#doctors" onclick="closeMob()">Doctors</a></li>
+        <li><a href="#services" onclick="closeMob()">Services</a></li>
+        <li><a href="#contact" onclick="closeMob()">Contact</a></li>
+        <li><a href="#book" class="mob-book" onclick="closeMob()">📅 Book Appointment</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-track" id="heroTrack">
+      <div class="hslide active"><div class="hslide-bg" style="background-image:url('33175.jpg')"></div><div class="hslide-ov"></div><div class="hslide-cnt"><span class="hpill">🏥 Welcome to Kaveri</span><h1>Expert Care for<br/><em>Your Little One</em></h1><p>Trusted Paediatric Specialists serving Nirmal &amp; surrounding districts</p><div class="hbtns"><a href="#book" class="hbtn-p">Book Appointment →</a><a href="#doctors" class="hbtn-g">Meet Doctors</a></div></div></div>
+      <div class="hslide"><div class="hslide-bg" style="background-image:url('33173.jpg')"></div><div class="hslide-ov"></div><div class="hslide-cnt"><span class="hpill">💉 Immunization</span><h1>Complete Vaccine<br/><em>Schedules for All Ages</em></h1><p>From newborns to teenagers — never miss a critical vaccination</p><div class="hbtns"><a href="#book" class="hbtn-p">Get a Token →</a><a href="#services" class="hbtn-g">Our Services</a></div></div></div>
+      <div class="hslide"><div class="hslide-bg" style="background-image:url('33174.jpg')"></div><div class="hslide-ov"></div><div class="hslide-cnt"><span class="hpill">🌡️ Advanced Treatment</span><h1>Modern Paediatric<br/><em>Medicine &amp; Diagnosis</em></h1><p>Fever · Allergy · Pneumonia · Newborn Care · Emergency</p><div class="hbtns"><a href="#book" class="hbtn-p">Book Now →</a><a href="#contact" class="hbtn-g">Call Us</a></div></div></div>
+      <div class="hslide"><div class="hslide-bg" style="background-image:url('33185.jpg')"></div><div class="hslide-ov"></div><div class="hslide-cnt"><span class="hpill">👶 Newborn Specialists</span><h1>Gentle Care for<br/><em>Newborns &amp; Infants</em></h1><p>Jaundice · Feeding Issues · Birth Screening · Intensive Care</p><div class="hbtns"><a href="#book" class="hbtn-p">Book Appointment →</a><a href="#about" class="hbtn-g">Learn More</a></div></div></div>
+    </div>
+    <button class="hprev" id="hprev">&#8249;</button>
+    <button class="hnext" id="hnext">&#8250;</button>
+    <div class="hdots" id="hdots"></div>
+
+    <!-- Live Token Banner -->
+    <div class="token-banner">
+      <div class="tb-inner">
+        <div class="tb-item"><div class="tb-ico">🎟️</div><div><div class="tb-lbl">Tokens Left</div><div class="tb-val" id="heroLeft">–</div></div></div>
+        <div class="tb-sep"></div>
+        <div class="tb-item"><div class="tb-ico">🔢</div><div><div class="tb-lbl">Next Token</div><div class="tb-val" id="heroNext">–</div></div></div>
+        <div class="tb-sep"></div>
+        <div class="tb-item"><div class="tb-ico">🟢</div><div><div class="tb-lbl">Status</div><div class="tb-val" id="heroStatus">–</div></div></div>
+        <a href="#book" class="tb-btn">Book Now →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-row">
+        <div class="stat"><div class="stat-n">100+</div><div class="stat-l">Daily Patients</div></div>
+        <div class="stat"><div class="stat-n">3</div><div class="stat-l">Expert Doctors</div></div>
+        <div class="stat"><div class="stat-n">24/7</div><div class="stat-l">OPD Available</div></div>
+        <div class="stat"><div class="stat-n">10+</div><div class="stat-l">Years of Trust</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-sec" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="av-main"><img src="33175.jpg" alt="Hospital" /><div class="av-badge"><span class="av-b-ico">🏆</span><div><strong>Nirmal's Most Trusted</strong><span>Children's Hospital</span></div></div></div>
+          <div class="av-secondary"><img src="33174.jpg" alt="Child Care" /></div>
+        </div>
+        <div class="about-body">
+          <div class="eyebrow">About Us</div>
+          <h2 class="sec-h2">Dedicated to Every<br/>Child's Health Journey</h2>
+          <p class="about-lead">Kaveri Children's Hospital is the cornerstone of paediatric healthcare in Nirmal, Telangana. Our expert paediatricians deliver compassionate, evidence-based care for children from newborns to teenagers.</p>
+          <div class="afeats">
+            <div class="afeat"><div class="afeat-ico">🩺</div><div><strong>Expert Paediatricians</strong><span>Decades of combined clinical experience</span></div></div>
+            <div class="afeat"><div class="afeat-ico">💉</div><div><strong>Immunization Programme</strong><span>Complete vaccination schedules from birth</span></div></div>
+            <div class="afeat"><div class="afeat-ico">🔬</div><div><strong>Advanced Diagnostics</strong><span>Modern equipment for accurate diagnosis</span></div></div>
+            <div class="afeat"><div class="afeat-ico">🚨</div><div><strong>Emergency Paediatrics</strong><span>Rapid response for critical childhood illness</span></div></div>
+          </div>
+          <div class="about-actions">
+            <a href="#book" class="btn-primary">Book Appointment</a>
+            <div class="cpills">
+              <a href="tel:9989979988" class="cpill">📞 9989979988</a>
+              <a href="tel:9959844425" class="cpill">📞 9959844425</a>
+            </div>
+          </div>
+          <p class="about-addr">📍 Near Tirumala Theatre, Doctor's Lane, Nirmal – 504106</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCTORS -->
+  <section class="doctors-sec" id="doctors">
+    <div class="container">
+      <div class="sec-header">
+        <div class="eyebrow">Our Specialists</div>
+        <h2 class="sec-h2">Meet Our Doctors</h2>
+        <p class="sec-sub">Dedicated paediatric specialists committed to your child's wellbeing</p>
+      </div>
+      <div class="docs-grid">
+        <div class="doc-card">
+          <div class="doc-photo-wrap">
+            <img src="dr_srikanth.jpg" alt="Dr. Kaveti Srikanth" class="doc-photo" />
+            <div class="doc-glow"></div>
+          </div>
+          <div class="doc-body">
+            <div class="doc-tag-row"><span class="doc-tag">Consultant Paediatrician</span></div>
+            <h3>Dr. Kaveti Srikanth</h3>
+            <p>Specialist in childhood infections, respiratory illness, UTI and neonatal care management.</p>
+            <a href="tel:9989979988" class="doc-btn">📞 Book Appointment</a>
+          </div>
+        </div>
+        <div class="doc-card featured">
+          <div class="doc-senior-badge">⭐ Senior Consultant</div>
+          <div class="doc-photo-wrap">
+            <img src="dr_chakradhari.jpg" alt="Dr. Appala Chakradhari" class="doc-photo" />
+            <div class="doc-glow"></div>
+          </div>
+          <div class="doc-body">
+            <div class="doc-tag-row"><span class="doc-tag senior-tag">Senior Consultant Paediatrician</span></div>
+            <h3>Dr. Appala Chakradhari</h3>
+            <p>Decades of experience in advanced paediatric medicine, childhood diseases and critical care across Telangana.</p>
+            <a href="tel:9989979988" class="doc-btn">📞 Book Appointment</a>
+          </div>
+        </div>
+        <div class="doc-card">
+          <div class="doc-photo-wrap">
+            <img src="dr_nagaranjani.jpg" alt="Dr. P.G. Nagaranjani" class="doc-photo" />
+            <div class="doc-glow"></div>
+          </div>
+          <div class="doc-body">
+            <div class="doc-tag-row"><span class="doc-tag">Consultant Paediatrician</span></div>
+            <h3>Dr. P.G. Nagaranjani</h3>
+            <p>Expert in paediatric nutrition, allergy management, immunization and comprehensive child wellness.</p>
+            <a href="tel:9989979988" class="doc-btn">📞 Book Appointment</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services-sec" id="services">
+    <div class="container">
+      <div class="sec-header">
+        <div class="eyebrow">What We Treat</div>
+        <h2 class="sec-h2">Our Specialities</h2>
+        <p class="sec-sub">Comprehensive paediatric care from birth through adolescence</p>
+      </div>
+      <div class="svcs-grid">
+        <div class="svc-card"><div class="svc-ico">🌡️</div><h3>Fever &amp; Viral Illness</h3><p>Expert management of viral fevers, dengue, typhoid &amp; seasonal infections</p></div>
+        <div class="svc-card"><div class="svc-ico">💉</div><h3>Immunization</h3><p>Complete vaccination schedules, catch-up doses and school immunization</p></div>
+        <div class="svc-card"><div class="svc-ico">🫁</div><h3>Respiratory Care</h3><p>Pneumonia, asthma, bronchitis &amp; breathing difficulties in children</p></div>
+        <div class="svc-card"><div class="svc-ico">🤧</div><h3>Allergy &amp; ENT</h3><p>Chronic cold, allergy testing &amp; management, throat and sinus care</p></div>
+        <div class="svc-card"><div class="svc-ico">👶</div><h3>Newborn Care</h3><p>Neonatal jaundice, feeding issues, birth defects screening &amp; NICU</p></div>
+        <div class="svc-card"><div class="svc-ico">🧪</div><h3>Kidney &amp; UTI</h3><p>Urinary tract infections, kidney disease diagnosis and management</p></div>
+        <div class="svc-card"><div class="svc-ico">🩸</div><h3>Nutrition &amp; Growth</h3><p>Vitamin deficiencies, anaemia, growth disorders &amp; nutritional counselling</p></div>
+        <div class="svc-card"><div class="svc-ico">🚨</div><h3>Emergency Paediatrics</h3><p>Seizures, severe dehydration, critical illness — rapid specialist intervention</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="booking-sec" id="book">
+    <div class="bk-bg-orb bk-orb1"></div>
+    <div class="bk-bg-orb bk-orb2"></div>
+    <div class="container">
+      <div class="sec-header light">
+        <div class="eyebrow light-ey">Online Token Booking</div>
+        <h2 class="sec-h2 light-h2">Book Your Appointment</h2>
+        <p class="sec-sub light-sub">Secure your token in under 2 minutes — skip the queue</p>
+      </div>
+
+      <!-- STATE: Before 5 AM -->
+      <div class="bk-state" id="bookingClosedCard" style="display:none">
+        <div class="bk-state-ico">🕔</div>
+        <h3>Booking Opens at 5:00 AM</h3>
+        <p>Online token booking starts every day at <strong>5:00 AM IST</strong>. Please come back then.</p>
+        <div class="bk-state-time">Current Time: <strong id="closedTimeDisplay">–</strong></div>
+        <a href="tel:9989979988" class="btn-primary mt16">📞 Call for Emergency</a>
+      </div>
+
+      <!-- STATE: All tokens full -->
+      <div class="bk-state" id="bookingFullCard" style="display:none">
+        <div class="bk-state-ico">🎟️</div>
+        <h3>All 100 Tokens Booked for Today</h3>
+        <p>Today's slots are fully booked. Please try tomorrow after 5:00 AM or call for emergencies.</p>
+        <a href="tel:9989979988" class="btn-primary mt16">📞 Emergency Contact</a>
+      </div>
+
+      <!-- MAIN LAYOUT -->
+      <div class="bk-layout" id="bookingWrapper">
+
+        <!-- INFO PANEL -->
+        <div class="bk-info">
+          <h3 class="bi-h">Today's Token Status</h3>
+          <div class="tk-cards">
+            <div class="tk-c">
+              <span class="tk-l">Tokens Remaining</span>
+              <span class="tk-n" id="tokensLeftDisplay">–</span>
+              <div class="tk-track"><div class="tk-fill" id="tokenBar"></div></div>
+            </div>
+            <div class="tk-c">
+              <span class="tk-l">Your Token Will Be</span>
+              <span class="tk-n accent" id="nextTokenDisplay">–</span>
+            </div>
+            <div class="tk-c full">
+              <span class="tk-l">Estimated Slot</span>
+              <span class="tk-slot" id="estimatedSlotDisplay">–</span>
+            </div>
+          </div>
+          <div class="ov-warn" id="overflowWarning" style="display:none">⚠️ Only <strong>evening waiting slots (6 PM+)</strong> available. Delay is possible.</div>
+          <div class="policy-box">
+            <div class="pb-title">📋 Appointment Policy</div>
+            <ul>
+              <li>Arrive within <strong>30 minutes</strong> of your slot</li>
+              <li>Late arrival may result in token cancellation</li>
+              <li>₹50 advance adjustable against consultation fee</li>
+              <li>Refundable if cancelled 1 hour before slot</li>
+            </ul>
+          </div>
+          <div class="hosp-mini">
+            <p>📍 Near Tirumala Theatre, Doctor's Lane, Nirmal</p>
+            <p>📞 9989979988 &nbsp;|&nbsp; 9959844425</p>
+            <p>🕐 Token Booking: Daily from 5:00 AM</p>
+            <p>🏥 OPD: 24/7 Available</p>
+          </div>
+        </div>
+
+        <!-- FORM PANEL -->
+        <div class="bk-form">
+
+          <!-- Step indicator -->
+          <div class="steps-bar">
+            <div class="step-item active" id="sb1"><div class="step-dot">1</div><span>Details</span></div>
+            <div class="step-line" id="sl1"></div>
+            <div class="step-item" id="sb2"><div class="step-dot">2</div><span>OTP</span></div>
+            <div class="step-line" id="sl2"></div>
+            <div class="step-item" id="sb3"><div class="step-dot">3</div><span>Pay</span></div>
+            <div class="step-line" id="sl3"></div>
+            <div class="step-item" id="sb4"><div class="step-dot">4</div><span>Done</span></div>
+          </div>
+
+          <!-- Step 1 -->
+          <div class="fstep" id="step1">
+            <h3 class="fstep-h">Patient Details</h3>
+            <div class="fg"><label>Child's Full Name <span class="req">*</span></label><input type="text" id="patientName" placeholder="Enter child's name" autocomplete="off" /><span class="ferr" id="nameErr"></span></div>
+            <div class="fg"><label>Parent / Guardian Phone <span class="req">*</span></label><div class="ph-row"><div class="ph-pre">+91</div><input type="tel" id="phoneNumber" placeholder="10-digit mobile" maxlength="10" inputmode="numeric" /><button class="otp-btn" id="sendOtpBtn" onclick="sendOTP()">Send OTP</button></div><span class="ferr" id="phoneErr"></span></div>
+            <div class="fg"><label>Child's Age <span class="req">*</span></label><div class="age-row"><input type="number" id="childAge" placeholder="Age" min="0" max="18" inputmode="numeric" /><select id="ageUnit"><option>Years</option><option>Months</option><option>Days</option></select></div><span class="ferr" id="ageErr"></span></div>
+            <div class="fg"><label>Reason for Visit <span class="opt">(Optional)</span></label><textarea id="visitReason" placeholder="Symptoms or reason for visit..." rows="3"></textarea></div>
+            <button class="btn-step" onclick="proceedToOTP()">Continue to OTP →</button>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="fstep hidden" id="step2">
+            <h3 class="fstep-h">OTP Verification</h3>
+            <div class="otp-info"><p>📱 OTP sent to <strong id="otpPhoneDisplay">–</strong></p><p class="otp-sub">Demo mode: OTP shown below</p></div>
+            <div class="demo-otp" id="demoOtpBox" style="display:none"><span>🔐 Demo OTP:</span><strong id="demoOtpDisplay">–</strong></div>
+            <div class="fg"><label>Enter 4-Digit OTP</label><div class="otp-boxes"><input class="otp-box" id="otp1" maxlength="1" inputmode="numeric" oninput="otpInput(this,null,'otp2')" /><input class="otp-box" id="otp2" maxlength="1" inputmode="numeric" oninput="otpInput(this,'otp1','otp3')" /><input class="otp-box" id="otp3" maxlength="1" inputmode="numeric" oninput="otpInput(this,'otp2','otp4')" /><input class="otp-box" id="otp4" maxlength="1" inputmode="numeric" oninput="otpInput(this,'otp3',null)" /></div><span class="ferr" id="otpErr"></span></div>
+            <button class="btn-step" onclick="verifyOTP()">Verify &amp; Continue →</button>
+            <button class="btn-link" onclick="resendOTP()">Resend OTP</button>
+            <button class="btn-back" onclick="goToStep(1)">← Back</button>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="fstep hidden" id="step3">
+            <h3 class="fstep-h">Advance Payment</h3>
+            <div class="pay-summary"><div class="ps-row"><span>Booking Advance</span><strong class="ps-amt">₹50</strong></div><p class="ps-note">Adjustable against consultation. Refundable if cancelled 1 hr before slot.</p></div>
+            <div class="pay-opts">
+              <div class="pay-opt active" onclick="selectPayMode(this,'upi')"><span>📱</span>UPI / GPay</div>
+              <div class="pay-opt" onclick="selectPayMode(this,'card')"><span>💳</span>Card</div>
+              <div class="pay-opt" onclick="selectPayMode(this,'netbanking')"><span>🏦</span>Net Banking</div>
+            </div>
+            <div class="demo-pay-note">⚠️ Demo Mode — No real payment processed</div>
+            <button class="btn-pay" id="payBtn" onclick="simulatePayment()"><span id="payBtnTxt">💳 Pay ₹50 &amp; Confirm Booking</span></button>
+            <button class="btn-back" onclick="goToStep(2)">← Back</button>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="fstep hidden" id="step4">
+            <div class="confirm-wrap">
+              <div class="confirm-check">✓</div>
+              <h3>Booking Confirmed!</h3>
+              <p class="confirm-sub">Your token has been successfully issued</p>
+              <div class="ticket">
+                <div class="ticket-top">
+                  <img src="33177.png" alt="Logo" class="ticket-logo" />
+                  <div><div class="ticket-hosp">Kaveri Children's Hospital</div><div class="ticket-city">Nirmal, Telangana</div></div>
+                </div>
+                <div class="ticket-token-box">
+                  <span class="ttb-label">Token Number</span>
+                  <span class="ttb-num" id="res-token">–</span>
+                </div>
+                <div class="ticket-details">
+                  <div class="td-row"><span>Patient</span><strong id="res-name">–</strong></div>
+                  <div class="td-row"><span>Time Slot</span><strong id="res-slot">–</strong></div>
+                  <div class="td-row"><span>Phone</span><strong id="res-phone">–</strong></div>
+                  <div class="td-row"><span>Date</span><strong id="res-date">–</strong></div>
+                </div>
+                <div class="ticket-foot">📍 Near Tirumala Theatre, Doctor's Lane, Nirmal</div>
+              </div>
+              <div class="ov-result" id="overflowResultWarning" style="display:none">⚠️ <strong>Overflow / Waiting Slot (6 PM+)</strong> — Please plan for possible delay.</div>
+              <div class="noshow-note">🕐 Arrive within <strong>30 min</strong> of slot. Late arrivals may lose their token.</div>
+              <a href="#" class="btn-wa" id="whatsappBtn">📲 Share on WhatsApp</a>
+              <button class="btn-outline-blue" onclick="resetBooking()">Book Another Appointment</button>
+            </div>
+          </div>
+
+        </div><!-- /bk-form -->
+      </div><!-- /bk-layout -->
+    </div>
+  </section>
+
+  <!-- TIPS -->
+  <section class="tips-sec">
+    <div class="container">
+      <div class="sec-header">
+        <div class="eyebrow">Health Awareness</div>
+        <h2 class="sec-h2">Tips for Parents</h2>
+        <p class="sec-sub">Stay informed, keep your child healthy</p>
+      </div>
+      <div class="tips-grid">
+        <div class="tip-card"><div class="tip-img"><img src="33173.jpg" alt="Viral Fever" /><div class="tip-ov"></div><span class="tip-cat">🌡️ Viral Season</span></div><div class="tip-body"><h4>Viral Fever Precautions</h4><p>Give children only boiled/purified water, ensure regular handwashing and avoid crowded places during viral outbreaks.</p><a href="#book" class="tip-lnk">Consult Now →</a></div></div>
+        <div class="tip-card"><div class="tip-img"><img src="33174.jpg" alt="Child Health" /><div class="tip-ov"></div><span class="tip-cat">🩺 Wellness</span></div><div class="tip-body"><h4>Regular Health Check-ups</h4><p>Schedule routine paediatric visits to monitor growth, development and ensure vaccinations are up to date.</p><a href="#book" class="tip-lnk">Book Checkup →</a></div></div>
+        <div class="tip-card"><div class="tip-img"><img src="33185.jpg" alt="Immunization" /><div class="tip-ov"></div><span class="tip-cat">💉 Vaccines</span></div><div class="tip-body"><h4>Don't Miss Immunization</h4><p>Missed vaccines leave children vulnerable. Consult our specialists immediately for catch-up doses.</p><a href="#book" class="tip-lnk">Check Schedule →</a></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-sec" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left">
+          <div class="eyebrow">Contact Us</div>
+          <h2 class="sec-h2">We're Here for You</h2>
+          <p class="contact-intro">Reach out for appointments, emergencies or questions about your child's health.</p>
+          <div class="cc-grid">
+            <a href="tel:9989979988" class="cc-card"><div class="cc-ico">📞</div><div><strong>Primary</strong><span>9989979988</span></div></a>
+            <a href="tel:9959844425" class="cc-card"><div class="cc-ico">📞</div><div><strong>Alternate</strong><span>9959844425</span></div></a>
+            <div class="cc-card noclk"><div class="cc-ico">📍</div><div><strong>Address</strong><span>Near Tirumala Theatre, Doctor's Lane, Nirmal – 504106</span></div></div>
+            <div class="cc-card noclk"><div class="cc-ico">⏰</div><div><strong>OPD Hours</strong><span>24/7 Available · Tokens from 5:00 AM</span></div></div>
+            <a href="https://instagram.com/kaveri_childrens_hospital" target="_blank" class="cc-card"><div class="cc-ico">📷</div><div><strong>Instagram</strong><span>@kaveri_childrens_hospital</span></div></a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <div class="map-box">
+            <div class="map-inner">
+              <div class="map-pin">📍</div>
+              <h4>Kaveri Children's Hospital</h4>
+              <p>Near Tirumala Theatre<br/>Doctor's Lane, Nirmal – 504106<br/>Telangana</p>
+              <a href="https://maps.google.com/?q=Kaveri+Children+Hospital+Nirmal+Telangana" target="_blank" class="btn-map">Open in Google Maps →</a>
+            </div>
+          </div>
+          <div class="emerg-card">
+            <div class="emerg-inner"><div class="emerg-ico">🚨</div><div><strong>Paediatric Emergency?</strong><span>Available 24/7 — Call immediately</span></div><a href="tel:9989979988" class="emerg-btn">Call Now</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-wave"><svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 C480,60 960,0 1440,30 L1440,60 L0,60 Z" fill="#081828"/></svg></div>
+    <div class="footer-body">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo-row"><img src="33177.png" alt="Logo" class="footer-logo" /><div><div class="fb-name">Kaveri Children's Hospital</div><div class="fb-loc">Nirmal, Telangana</div></div></div>
+            <p>Trusted paediatric care for every child in Nirmal and surrounding districts. Your child's health is our first priority.</p>
+            <a href="https://instagram.com/kaveri_childrens_hospital" target="_blank" class="footer-social">📷 @kaveri_childrens_hospital</a>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul><li><a href="#home">Home</a></li><li><a href="#about">About Us</a></li><li><a href="#doctors">Our Doctors</a></li><li><a href="#services">Services</a></li><li><a href="#book">Book Appointment</a></li><li><a href="#contact">Contact</a></li></ul>
+          </div>
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul><li>Fever &amp; Viral Illness</li><li>Immunization</li><li>Respiratory Care</li><li>Allergy &amp; ENT</li><li>Newborn Care</li><li>Emergency Paediatrics</li></ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <p>Near Tirumala Theatre,<br/>Doctor's Lane, Nirmal – 504106</p>
+            <a href="tel:9989979988">📞 9989979988</a>
+            <a href="tel:9959844425">📞 9959844425</a>
+            <p class="footer-timing">Token Booking: Daily from 5:00 AM<br/>OPD: 24/7 Available</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 Kaveri Children's Hospital. All rights reserved.</p>
+          <p>Designed &amp; Developed by <a href="https://www.idesign4u.in" target="_blank">iDesign4U</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Global Loader -->
+  <div class="g-loader" id="gLoader" style="display:none"><div class="g-ring"></div><p id="gLoaderTxt">Processing...</p></div>
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
